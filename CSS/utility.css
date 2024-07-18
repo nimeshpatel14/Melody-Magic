@@ -1,0 +1,67 @@
+.white-border{
+    border: 2px solid white;
+}
+
+.invert{
+    filter: invert();
+}
+
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+    /* text-align: center; */
+}
+.justify{
+    justify-content: center;
+
+}
+
+.p-1{
+    padding: 5px;
+}
+
+.img-bg-radius{
+    border-radius: 20px;
+    background-color: white;
+    padding: 7px;
+}
+
+/* For WebKit/Blink browsers */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 200px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666; /* Change this to your desired color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change this to your desired color */
+}
+
+/* For Firefox */
+/* Track */
+.songList ul {
+    scrollbar-width:thin;
+    scrollbar-color: #666 transparent; /* Change this to your desired color */
+}
+
+/* Handle */
+.songList ul:hover {
+    scrollbar-color: #555 transparent; /* Change this to your desired color */
+}
+
+
+/* .album {
+    scrollbar-width:thin;
+    scrollbar-color: #666 transparent; 
+}
+
+
+.album:hover {
+    scrollbar-color: #555 transparent; 
+} */

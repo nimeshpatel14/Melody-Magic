@@ -1,0 +1,427 @@
+@media (max-width: 1200px) {
+
+
+    .container {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left {
+        
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        left: -130%;
+        top: 7px;
+        transition: all .3s;
+        z-index: 1;
+        width: 500px;
+        height: 827px;
+        /* border: 1px solid white; */
+    }
+
+    .left .menu_1 .logo :last-child {
+        position: absolute;
+        top: 30px;
+        left: 460px;
+        display: inline;
+    }
+
+    .left .menu_2 {
+        height: 77vh;
+        /* border: 1px soild white; */
+    }
+
+    .menu_2 .albums {
+        width: 400px;
+        height: 60vh;
+    }
+
+    .right {
+        width: 97vw;
+        height: 98vh;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .right header {
+        width: 96vw;
+    }
+
+    .right .songList .bgtext {
+        text-align: center;
+        font-size: 40px;
+        ;
+        width: 900px;
+        height: 250px;
+        margin: auto;
+        color: #514d4d;
+    }
+
+
+    header .arrows .hamburger {
+        width: 30px;
+        display: inline;
+        margin-right: 30px;
+    }
+
+    .right .songList {
+        width: 96vw;
+        height: 52vh;
+
+    }
+
+    .right .songList ul {
+
+        height: 52vh;
+    }
+
+    .right .songList li {
+        width: 94vw;
+
+    }
+
+    .right .musicController {
+        width: 94vw;
+    }
+
+    .musicController .discription {
+        width: 93vw;
+    }
+
+    .musicController .seekBar {
+        width: 90vw;
+    }
+
+    .musicController .duration {
+        width: 89vw;
+    }
+
+    .musicController .playBar {
+        width: 93vw;
+    }
+}
+
+
+@media (max-width: 700px) {
+    
+    .container {
+        
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid rgb(252, 235, 5); */
+
+    }
+
+    .left {
+        width: 400px;
+    }
+
+    .left .menu_1 .logo :last-child {
+        position: absolute;
+        top: 30px;
+        left: 360px;
+    }
+
+    .menu_2 .albums {
+        width: 350px;
+        height: 65vh;
+    }
+
+    .menu_2 .albums .card {
+        width: 130px;
+        height: 145px;
+
+    }
+
+    .playBar .extraBtn {
+        gap: 50px;
+        width: auto;
+    }
+
+    .playBar .volumeBar {
+        width: auto;
+    }
+
+    .playBar .volumeBar #range {
+        width: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid rgb(252, 235, 5); */
+
+    }
+
+    .left {
+        
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        top: 4px;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 320px;
+        height: 800px;
+        padding: 7px 5px;
+        /* border: 1px solid white; */
+    }
+
+    .left .menu_1 .logo :last-child {
+        position: absolute;
+        top: 30px;
+        left: 280px;
+    }
+
+    .left .menu_2 {
+        height: 76vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 1px solid white; */
+    }
+
+
+    .menu_2 .albums {
+        width: 278px;
+        height: 60vh;
+        /* border: 1px solid white; */
+        gap: 27px;
+        justify-content: space-between;
+    }
+
+    .menu_2 .albums .card {
+        width: 105px;
+        height: 120px;
+
+    }
+
+    .albums .card .cover {
+        width: 100px;
+        height: 120px;
+    }
+
+
+    .right {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 5px;
+        width: 100%;
+        height: 94vh;
+        padding: 7px 5px;
+        /* border: 1px solid white; */
+    }
+
+
+    .right header {
+        width: 95vw;
+    }
+
+
+    header .arrows .hamburger {
+        margin-right: 10px;
+    }
+
+    header #signIn {
+        margin-right: 10px;
+        color: rgb(167, 167, 167);
+        cursor: pointer;
+    }
+
+    header #logIn {
+        margin: 0px 10px;
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 28px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .right .section-1 {
+        width: 85vw
+    }
+
+    .right .songList .bgtext {
+        text-align: center;
+        font-size: 40px;
+        ;
+        width: 400px;
+        height: 250px;
+        margin: auto;
+        color: #514d4d;
+    }
+
+    .right .songList {
+        width: 95vw;
+
+    }
+
+    .right .songList li {
+        width: 93vw;
+
+    }
+
+
+
+
+
+
+
+
+    .right .musicController {
+        width: 92vw;
+        gap: 20px;
+    }
+
+    .musicController> :first-child {
+        width: 85vw;
+    }
+    .musicController .discription {
+        width: 77vw;
+        padding-bottom: 5px ;
+
+    }
+
+    .musicController .seekBar {
+        width: 86vw;
+    }
+
+    .musicController .duration {
+        width: 86vw;
+        font-size: 13px;
+    }
+
+    .musicController .playBar {
+        width: 91vw;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    .playBar .extraBtn {
+        gap: 25px;
+        width: auto;
+    }
+ 
+    .playBar .extraBtn > :last-child{
+        display: none;
+    }
+
+    .playBar .extraBtn span {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .playBar .extraBtn img {
+        width: 30px;
+    
+    }
+    
+    .playBar .extraBtn img:hover {
+        width: 28px;
+    
+    }
+    
+    
+    .musicController .playBarBtn {
+        gap: 10px;
+    
+    }
+    
+    .musicController .playBarBtn> :first-child{
+        display: flex;
+        justify-content: center;
+    }
+    .musicController .playBarBtn #prev {
+        width: 32px;
+    }
+    .musicController .playBarBtn> :nth-child(2){
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .musicController .playBarBtn #play{
+        width: 45px;
+    }
+    .musicController .playBarBtn> :last-child{
+        display: flex;
+        justify-content: center;
+    }
+    .musicController .playBarBtn #next{
+        width: 32px;
+    }
+
+    /* .musicController .playBarBtn span {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .musicController .playBarBtn img {
+        width: 38px;
+        cursor: pointer;
+    }
+     */
+
+    .playBarBtn img:hover {
+        width: 36px;
+    }
+   
+    .playBar .extraBtn1 {
+        display: flex;
+        gap: 25px;
+        width: auto;
+    }
+ 
+    .playBar .extraBtn1> :first-child{
+        display: none;
+    }
+
+    .playBar .extraBtn1 span {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .playBar .extraBtn1 img {
+        width: 30px;
+    
+    
+    }
+    
+    .playBar .extraBtn1 img:hover {
+        width: 28px;
+    
+    }
+
+
+
+
+
+    .playBar .volumeBar {
+        display: none;
+    }
+    
+  
+    
+
+
+
+}

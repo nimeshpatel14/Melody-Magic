@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- Dark green circle -->
+  <circle cx="10" cy="10" r="9" fill="#1ed760" />
+  <!-- Play button -->
+  <polygon points="7,5 7,15 15,10" fill="black" />
+</svg>
+

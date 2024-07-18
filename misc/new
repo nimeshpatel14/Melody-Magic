@@ -1,0 +1,108 @@
+// Event listner for PLAY ALL and SHUFFLE MODE
+    document.querySelector(".playAll").addEventListener("click", () => {
+
+        let shuffleMode = false
+        let repeatMode =flase
+        let shuffledSongs = [];
+        let currentIndex = 0;
+
+        function shuffleArray(array) {
+            let currentIndex = array.length, randomIndex;
+
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]];
+            }
+
+            return array;
+        }
+
+        function toggleShuffleMode() {
+            shuffleMode = !shuffleMode
+            if (shuffleMode) {
+                shuffledSongs = shuffleArray(songList.slice())
+                currentIndex = shuffledSongs.indexOf(songList[currentIndex]);
+                document.querySelector("#shuffle").style.filter= "invert(100%)";
+            }
+            else {
+                shuffledSongs = [];
+                document.querySelector("#shuffle").style.filter= "invert(0%)";
+            }
+        }
+
+
+
+        function toggleRepeatMode() {
+            repeatMode = !repeatMode;
+            if (repeatMode) {
+                document.querySelector("#repeat").style.filter = "invert(100%)";
+            } else {
+                document.querySelector("#repeat").style.filter = "invert(0%"; 
+                // Reset the filter to original
+            }
+        }
+
+
+
+
+        console.log(shuffledSongs);
+
+        function playCurrentSong() {
+            if (shuffleMode) {
+                currentSong.src = '/songs/' + shuffledSongs[currentIndex];
+                currentSong.play();
+                document.querySelector(".discription").innerHTML = shuffledSongs[currentIndex];
+            }
+            else{
+                currentSong.src= '/songs/' + songList[currentIndex];
+                currentSong.play();
+                document.querySelector(".discription").innerHTML = songList[currentIndex];
+            }
+
+            if (repeatMode) {
+                currentSong.addEventListener("ended", playCurrentSong);
+            }
+        }
+
+        function nextSong() {
+            if (shuffleMode){
+               currentIndex = (currentIndex + 1) % shuffledSongs.length;
+               playCurrentSong();
+           }
+           else{
+                currentIndex=(currentIndex + 1) % songList.length;
+                playCurrentSong();
+           }
+           
+        }
+
+        function previousSong() {
+
+            if(shuffleMode){
+                currentIndex = (currentIndex - 1 + shuffledSongs.length) % shuffledSongs.length;
+                playCurrentSong();
+            }
+            else{
+                currentIndex = (currentIndex - 1 + songList.length) % songList.length;
+                playCurrentSong();
+
+            }
+        }
+
+        document.querySelector("#prev").addEventListener("click", previousSong);
+        document.querySelector("#next").addEventListener("click", nextSong);
+
+        document.querySelector("#shuffle").addEventListener("click", toggleShuffleMode);
+
+        document.querySelector("#repeat").addEventListener("click", toggleRepeatMode);
+        
+        currentSong.addEventListener("ended", nextSong);
+
+        playCurrentSong();
+    });
+
+
+

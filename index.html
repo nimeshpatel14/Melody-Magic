@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Magic</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <link rel="stylesheet" href="CSS/mediaquery.css">
+    <link rel="icon" href="svg/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex">
+
+        <div class="left ">
+            <div class="menu_1">
+                <div class="logo flex">
+                    <img src="svg/logo.png" alt="logo">
+                    <img class="close" src="svg/close.svg" alt="" srcset="">
+
+                </div>
+                <div class="home align-center flex p-1">
+                    <img class="invert" src="svg/home.svg" alt="home">
+                    Home
+                </div>
+                <div class="search align-center flex p-1">
+                    <img class="invert" src="svg/search.svg" alt="search">
+                    Search
+                </div>
+
+            </div>
+
+            <div class="menu_2">
+                <div class="library align-center flex p-1">
+                    <button class="align-center flex p-1">
+                        <img class="invert" src="svg/lib_logo.svg" alt="library">
+                        Your Library
+                    </button>
+                    <img class="invert" src="svg/plus.svg" alt="plus">
+                </div>
+
+
+                <div class="albums">
+
+
+
+                </div>
+
+
+                <footer>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+        </div>
+
+
+        <div class="right ">
+            <section>
+
+                <header class="flex align-center ">
+                    <div class="arrows flex align-center">
+                        <img class="hamburger" src="svg/hamburger.svg" alt="" srcset="">
+                        <img class="invert img-bg-radius" src="svg/left.svg" alt="left_arrow">
+                        <img class="invert img-bg-radius" src="svg/right.svg" alt="right_arrow">
+                    </div>
+                    <div>
+                        <span id="signIn"> Sign up</span>
+                        <span id="logIn">Log in</span>
+                    </div>
+                </header>
+
+                <div class="section-1 flex align-center">
+                    <h3>
+
+                    </h3>
+                    <button class="playAll">Play All</button>
+
+                </div>
+
+
+                <div class="songList flex">
+
+                    <div class="bgtext">
+                        <div class="head">Play Your Favourite Albums Here</div>
+                        <div class="instruction"> Click on any album cover in "Your Library" to load the album.</div>
+                    </div>
+
+                    <ul>
+
+
+                    </ul>
+
+                </div>
+
+
+                <div class="musicController">
+                    <div>
+                        <div class="discription"></div>
+                    </div>
+
+                    <div class="seekBar ">
+                        <div class="circle"></div>
+                    </div>
+                    <div>
+                        <div class="duration flex align-center">
+                            <div class="currentDuration">00:00</div>
+                            <div class="totalDuration">00:00</div>
+                        </div>
+                    </div>
+
+
+                    <div class="playBar flex align-center">
+
+                        <div class="extraBtn flex align-center">
+                            <span><img class="shuffle" src="svg/shuffle.svg" alt=""></span>
+                            <span><img class="repeat" src="svg/repeat.svg" alt=""></span>
+                        </div>
+
+                        <div class=" playBarBtn flex align-center ">
+                            <span><img id="prev" src="svg/prevbtn.svg" alt=""></span>
+                            <span><img id="play" src="svg/playbutton.svg" alt=""></span>
+                            <span><img id="next" src="svg/nextbtn.svg" alt=""></span>
+                        </div>
+
+                        <div class="extraBtn1 flex align-center">
+                            <span><img class="shuffle" src="svg/shuffle.svg" alt=""></span>
+                            <span><img class="repeat" src="svg/repeat.svg" alt=""></span>
+                        </div>
+
+
+                        <div class="volumeBar flex align-center">
+                            <img id="volume" src="svg/volume.svg" alt="">
+                            <div class="flex ">
+                                <input type="range" id="range">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
